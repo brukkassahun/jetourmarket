@@ -17,6 +17,7 @@ export const navLinks = [
   { href: "/cars", label: "Browse Cars" },
   { href: "/cars?condition=new", label: "New" },
   { href: "/cars?condition=used", label: "Used" },
+  { href: "/wholesale", label: "Wholesale" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];

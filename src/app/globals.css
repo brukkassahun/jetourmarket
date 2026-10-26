@@ -12,13 +12,13 @@ body {
 ::selection { @apply bg-electric text-white; }
 
 ::-webkit-scrollbar { width: 8px; height: 6px; }
-::-webkit-scrollbar-track { @apply bg-asphalt; }
-::-webkit-scrollbar-thumb { @apply bg-asphalt-border rounded-full; }
+::-webkit-scrollbar-track { @apply bg-asphalt-light; }
+::-webkit-scrollbar-thumb { @apply bg-steel-muted rounded-full; }
 ::-webkit-scrollbar-thumb:hover { @apply bg-steel; }
 
 @layer components {
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.22em] text-silver;
+    @apply inline-flex items-center gap-2 rounded-full border border-asphalt-border px-4 py-1.5 font-sans text-[11px] font-bold uppercase tracking-[0.22em] text-steel;
   }
   .display-xl {
     @apply font-display text-4xl font-black uppercase leading-[0.95] tracking-[-0.02em] sm:text-6xl lg:text-7xl;
@@ -36,25 +36,25 @@ body {
     @apply relative inline-flex items-center justify-center gap-2 rounded-xl bg-electric px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:bg-electric-strong hover:scale-[1.02] active:scale-[0.98];
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.16em] text-silver-bright transition-all duration-300 hover:border-white/40 hover:bg-white/5;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-asphalt-border px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.16em] text-silver-bright transition-all duration-300 hover:border-electric hover:bg-electric-dim;
   }
   .btn-signal {
     @apply relative inline-flex items-center justify-center gap-2 rounded-xl bg-signal px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:bg-signal-strong hover:scale-[1.02] active:scale-[0.98];
   }
   .card-dark {
-    @apply overflow-hidden rounded-2xl border border-asphalt-border bg-asphalt-card transition-all duration-300;
+    @apply overflow-hidden rounded-2xl border border-asphalt-border bg-asphalt-card transition-all duration-300 hover:border-steel-muted;
   }
   .input-dark {
-    @apply w-full appearance-none rounded-xl border border-asphalt-border bg-asphalt-light px-4 py-3 font-sans text-sm font-medium text-silver-bright outline-none transition-colors focus:border-electric;
+    @apply w-full appearance-none rounded-xl border border-asphalt-border bg-white px-4 py-3 font-sans text-sm font-medium text-silver-bright outline-none transition-colors focus:border-electric;
   }
   .badge {
     @apply inline-flex items-center rounded-md px-2.5 py-1 font-sans text-[10px] font-bold uppercase tracking-[0.12em];
   }
-  .badge-new { @apply bg-signal/20 text-signal; }
-  .badge-used { @apply bg-electric/20 text-electric-glow; }
-  .badge-available { @apply bg-signal/20 text-signal; }
-  .badge-sold { @apply bg-red-500/20 text-red-400; }
-  .badge-reserved { @apply bg-flare/20 text-flare; }
+  .badge-new { @apply bg-signal-dim text-signal-strong; }
+  .badge-used { @apply bg-electric-dim text-electric-strong; }
+  .badge-available { @apply bg-signal-dim text-signal-strong; }
+  .badge-sold { @apply bg-red-100 text-red-600; }
+  .badge-reserved { @apply bg-amber-100 text-amber-700; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -5,41 +5,41 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Dark automotive palette
+        // Light palette — matches JetourKits.com aesthetic
         asphalt: {
-          DEFAULT: "#0B0F14",
-          light: "#121821",
-          card: "#161E2A",
-          border: "#1E2937",
+          DEFAULT: "#FAF9F6",   // cream — main background
+          light: "#F2F1ED",     // slightly darker cream for alternating sections
+          card: "#FFFFFF",      // white card backgrounds
+          border: "#E5E4E0",    // light border
         },
         steel: {
-          DEFAULT: "#334155",
-          light: "#475569",
-          muted: "#64748B",
+          DEFAULT: "#6B7280",   // gray-500 — mid-tone text
+          light: "#4B5563",     // gray-600
+          muted: "#9CA3AF",     // gray-400 — placeholder / muted
         },
         silver: {
-          DEFAULT: "#94A3B8",
-          light: "#CBD5E1",
-          bright: "#E2E8F0",
+          DEFAULT: "#4B5563",   // gray-600 — secondary text
+          light: "#374151",     // gray-700
+          bright: "#0A0A0A",    // ink — primary text
         },
         electric: {
-          DEFAULT: "#3B82F6",
-          strong: "#2563EB",
-          dim: "#1E3A5F",
-          glow: "#60A5FA",
+          DEFAULT: "#0E7A3D",   // accent green — CTA / links
+          strong: "#0A6630",    // darker green for hover
+          dim: "#D1E7D8",       // light green tint backgrounds
+          glow: "#16A34A",      // brighter green for badges
         },
         signal: {
-          DEFAULT: "#10B981",
-          strong: "#059669",
-          dim: "#064E3B",
+          DEFAULT: "#16A34A",   // green for "available" status
+          strong: "#15803D",
+          dim: "#DCFCE7",
         },
         flare: {
-          DEFAULT: "#F59E0B",
+          DEFAULT: "#F59E0B",   // amber for "reserved"
           strong: "#D97706",
         },
         danger: "#EF4444",
-        paper: "#F8FAFC",
-        ink: "#0B0F14",
+        paper: "#FAF9F6",
+        ink: "#0A0A0A",
       },
       fontFamily: {
         display: ["var(--font-sans)", "system-ui", "sans-serif"],

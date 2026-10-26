@@ -1,9 +1,7 @@
 "use client";
 
 /**
- * Footer
- *
- * Dark site footer with brand blurb, quick links, legal links, and contact
+ * Site footer with brand blurb, quick links, legal links, and contact
  * channels (WhatsApp + WeChat). WeChat ID can be copied to clipboard.
  */
 import { useEffect, useState } from "react";
@@ -11,11 +9,12 @@ import Link from "next/link";
 import { site, whatsappLink } from "@/lib/site";
 
 const quickLinks = [
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
   { href: "/cars", label: "Browse Cars" },
-  { href: "/cars?condition=new", label: "New" },
-  { href: "/cars?condition=used", label: "Used" },
+  { href: "/cars?condition=new", label: "New Vehicles" },
+  { href: "/cars?condition=used", label: "Used Vehicles" },
+  { href: "/wholesale", label: "Wholesale" },
+  { href: "/about", label: "About Us" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const legalLinks = [
@@ -209,7 +208,7 @@ export default function Footer() {
                   href={`mailto:${site.email}`}
                   className="group flex items-center gap-3 font-sans text-sm text-silver-bright transition-colors hover:text-electric"
                 >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/5 text-silver transition-colors group-hover:bg-white/10">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-asphalt-light text-silver transition-colors group-hover:bg-asphalt-light">
                     <svg
                       className="h-5 w-5"
                       viewBox="0 0 24 24"

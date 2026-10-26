@@ -43,7 +43,7 @@ export default function FloatingContact() {
       className="group fixed bottom-5 right-5 z-40 flex items-center"
     >
       {/* Hover label */}
-      <span className="pointer-events-none absolute right-16 whitespace-nowrap rounded-lg border border-asphalt-border bg-asphalt-card px-3 py-1.5 font-sans text-xs font-semibold text-silver-bright opacity-0 shadow-lg shadow-black/30 transition-opacity duration-300 group-hover:opacity-100">
+      <span className="pointer-events-none absolute right-16 whitespace-nowrap rounded-lg border border-asphalt-border bg-asphalt-card px-3 py-1.5 font-sans text-xs font-semibold text-silver-bright opacity-0 shadow-lg shadow-gray-400/30 transition-opacity duration-300 group-hover:opacity-100">
         Chat with us
       </span>
 

@@ -3,7 +3,7 @@
 /**
  * Header
  *
- * Fixed dark top navigation. Desktop nav + currency selector + CTA on lg+,
+ * Fixed top navigation. Desktop nav + currency selector + CTA on lg+,
  * full-screen overlay menu with hamburger on mobile.
  */
 import { useEffect, useRef, useState } from "react";
@@ -166,7 +166,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setCurrencyOpen((o) => !o)}
-              className="flex items-center gap-1.5 rounded-lg border border-asphalt-border bg-asphalt-light px-2.5 py-2 font-sans text-xs font-bold uppercase tracking-[0.1em] text-silver-bright transition-colors hover:border-white/30"
+              className="flex items-center gap-1.5 rounded-lg border border-asphalt-border bg-asphalt-light px-2.5 py-2 font-sans text-xs font-bold uppercase tracking-[0.1em] text-silver-bright transition-colors hover:border-steel-muted"
               aria-label={`Currency: ${code}. Change currency`}
               aria-expanded={currencyOpen}
               aria-haspopup="listbox"
@@ -184,7 +184,7 @@ export default function Header() {
               <div
                 role="listbox"
                 aria-label="Select currency"
-                className="absolute right-0 z-50 mt-2 w-48 overflow-hidden rounded-xl border border-asphalt-border bg-asphalt-card py-1 shadow-xl shadow-black/40"
+                className="absolute right-0 z-50 mt-2 w-48 overflow-hidden rounded-xl border border-asphalt-border bg-asphalt-card py-1 shadow-xl shadow-gray-400/30"
               >
                 {currencies.map((c) => (
                   <button
@@ -196,7 +196,7 @@ export default function Header() {
                       setCode(c.code);
                       setCurrencyOpen(false);
                     }}
-                    className={`flex w-full items-center justify-between px-3 py-2 text-left font-sans text-xs transition-colors hover:bg-white/5 ${
+                    className={`flex w-full items-center justify-between px-3 py-2 text-left font-sans text-xs transition-colors hover:bg-asphalt-light ${
                       c.code === code ? "text-electric" : "text-silver-bright"
                     }`}
                   >
@@ -225,7 +225,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMobileOpen((o) => !o)}
-            className="inline-flex items-center justify-center rounded-lg p-2 text-silver-bright transition-colors hover:bg-white/5 lg:hidden"
+            className="inline-flex items-center justify-center rounded-lg p-2 text-silver-bright transition-colors hover:bg-asphalt-light lg:hidden"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
@@ -278,7 +278,7 @@ export default function Header() {
                     className={`rounded-lg border px-2 py-2 font-sans text-xs font-bold uppercase tracking-wider transition-colors ${
                       c.code === code
                         ? "border-electric bg-electric/10 text-electric"
-                        : "border-asphalt-border text-silver-bright hover:border-white/30"
+                        : "border-asphalt-border text-silver-bright hover:border-steel-muted"
                     }`}
                   >
                     {c.symbol} {c.code}

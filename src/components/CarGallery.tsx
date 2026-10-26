@@ -50,7 +50,7 @@ export default function CarGallery({ images, alt }: CarGalleryProps) {
               className={`relative aspect-square overflow-hidden rounded-lg border transition-colors ${
                 i === active
                   ? "border-electric ring-1 ring-electric"
-                  : "border-asphalt-border hover:border-white/30"
+                  : "border-asphalt-border hover:border-steel-muted"
               }`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -112,7 +112,7 @@ export default function CarFilters({ current }: CarFiltersProps) {
                 className={`rounded-lg border px-2 py-2 font-sans text-xs font-bold uppercase tracking-wider transition-colors ${
                   active
                     ? "border-electric bg-electric/10 text-electric"
-                    : "border-asphalt-border text-silver-bright hover:border-white/30"
+                    : "border-asphalt-border text-silver-bright hover:border-steel-muted"
                 }`}
               >
                 {opt.label}
