@@ -46,10 +46,6 @@ export const trustBadges = [
 export const currencies = [
   { code: "USD", symbol: "$", rate: 1, label: "US Dollar" },
   { code: "CNY", symbol: "¥", rate: 7.2, label: "Chinese Yuan" },
-  { code: "NGN", symbol: "₦", rate: 1530, label: "Nigerian Naira" },
-  { code: "GHS", symbol: "₵", rate: 15.4, label: "Ghanaian Cedi" },
-  { code: "AED", symbol: "AED", rate: 3.67, label: "UAE Dirham" },
-  { code: "EUR", symbol: "€", rate: 0.92, label: "Euro" },
 ] as const;
 
 export type CurrencyCode = (typeof currencies)[number]["code"];
