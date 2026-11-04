@@ -95,8 +95,8 @@ const values = [
 
 const stats = [
   { value: "30+", label: "Countries Served" },
-  { value: "7+", label: "Jetour Models" },
-  { value: "100+", label: "Vehicles Sold" },
+  { value: "7", label: "Jetour Models" },
+  { value: "LHD", label: "Left-Hand Drive" },
   { value: "5-Star", label: "Service" },
 ];
 

@@ -127,7 +127,7 @@ export default async function HomePage() {
     { value: "30+", label: "Countries Served" },
     { value: String(carModels.length), label: "Jetour Models" },
     {
-      value: availableCount > 0 ? String(availableCount) : "100+",
+      value: availableCount > 0 ? String(availableCount) + "+" : "Coming Soon",
       label: "Vehicles Available",
     },
     { value: "Direct", label: "Factory Pricing" },
