@@ -7,6 +7,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { site, whatsappLink } from "@/lib/site";
+import { LogoMark } from "@/components/Logo";
 
 const quickLinks = [
   { href: "/cars", label: "Browse Cars" },
@@ -104,9 +105,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-lg font-black uppercase tracking-[0.14em] text-silver-bright">
-              Jetour<span className="text-electric">&nbsp;Market</span>
-            </h3>
+            <div className="flex items-center gap-2.5">
+              <LogoMark variant="dark" className="h-8 w-8" />
+              <h3 className="font-display text-lg font-black uppercase tracking-[0.14em] text-silver-bright">
+                Jetour<span className="font-medium text-electric">&nbsp;Market</span>
+              </h3>
+            </div>
             <p className="mt-4 max-w-xs font-sans text-sm leading-relaxed text-silver">
               {site.description}
             </p>

@@ -11,6 +11,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { currencies, navLinks } from "@/lib/site";
 import { useCurrency } from "@/components/CurrencyProvider";
+import Logo, { LogoMark } from "@/components/Logo";
 
 /* --------------------------------- icons --------------------------------- */
 
@@ -137,8 +138,9 @@ export default function Header() {
           className="flex shrink-0 items-center"
           aria-label="Jetour Market home"
         >
-          <span className="font-display text-base font-black uppercase tracking-[0.18em] text-silver-bright sm:text-lg">
-            Jetour<span className="text-electric">&nbsp;Market</span>
+          <LogoMark variant="dark" className="h-8 w-8" />
+          <span className="ml-2.5 font-display text-base font-black uppercase tracking-[0.18em] text-silver-bright sm:text-lg">
+            Jetour<span className="font-medium text-electric">&nbsp;Market</span>
           </span>
         </Link>
 

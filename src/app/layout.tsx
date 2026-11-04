@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   },
   description:
     "Buy new and used Jetour vehicles direct from China. Factory-direct pricing, global shipping, OEM quality. T2, Dashing, X70, X90 and more.",
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
